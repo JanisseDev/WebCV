@@ -1,1 +1,0 @@
-<embed src="https://github.com/JanisseDev/WebCV/blob/main/Clement-JANISSET_CV.pdf" type="application/pdf" />
