@@ -1,0 +1,262 @@
+/* GENERAL */
+* {
+    --primary-secondary-gap: 20px;
+    --secondary-width: 80px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+}
+
+/* FONTS */
+#profile-title {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+#profile-subtitle {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+.profile-info * {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.section-title * {
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+}
+
+.job-title {
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.04rem;
+}
+
+.job-subtitle {
+    font-weight: 300;
+    font-size: 0.8rem;
+    font-style: italic;
+    letter-spacing: 0rem;
+}
+
+.job-secondary * {
+    font-weight: 100;
+    font-size: 0.7rem;
+    letter-spacing: 0rem;
+}
+
+.job-date {
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0rem;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 0rem;
+    text-align: justify;
+}
+
+.description b {
+    font-weight: 400;
+}
+
+.side-column h2 {
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 0.04rem;
+    margin-bottom: 8px;
+}
+
+.side-column p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 0rem;
+    padding-left: 6px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.link::after {
+    content: '🔗';
+    display: inline;
+    /*width: 15px;*/
+    /*margin-left: -15px;*/
+    padding-left: 2px;
+    font-size: 10px;
+    font-style: normal;
+}
+
+/* LAYOUTS */
+.root {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cv {
+    background-color: #2e2f48;
+    width: 840px;       /*  210px * 4  */
+    height: 1188px;     /*  297px * 4  */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex: none;
+}
+
+.cv * {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: #2e2f48;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px 30px;
+    flex: 0;
+}
+
+.main-header .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-header .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-content {
+    display: flex;
+    background-color: #2e2f48;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.side-column {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 75px 20px;
+    gap: 30px;
+    flex: 0;
+}
+
+.side-column-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    gap: 75px;
+    flex: 0;
+}
+
+.main-column {
+    display: flex;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 30px;
+    flex: 1;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    flex: 0;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-left: calc(var(--secondary-width) + var(--primary-secondary-gap));
+}
+
+.line {
+    background-color: rgb(220, 220, 220);
+    height: 4px;
+    flex: 1;
+}
+
+.section-job {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--primary-secondary-gap);
+}
+
+.job-secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: var(--secondary-width);
+}
+
+.job-primary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.job-primary-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 3px;
+}
+
+.job-multi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.job-multi .section-job {
+    gap: 15px;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
