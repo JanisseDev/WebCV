@@ -69,6 +69,23 @@ body {
     font-weight: 400;
 }
 
+.motivation {
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0rem;
+    text-align: justify;
+    line-height: 1.3rem;
+}
+
+.motivation ul {
+    padding-left: 25px;
+}
+
+.motivation br {
+    content: " ";
+    margin: 1rem 0rem;
+}
+
 .side-column h2 {
     font-weight: 400;
     font-size: 0.9rem;
@@ -186,6 +203,18 @@ a {
     flex: 1;
 }
 
+.main-column-motiv {
+    display: flex;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 70px;
+    gap: 0px;
+    flex: 1;
+}
+
 .section {
     display: flex;
     flex-direction: column;
@@ -259,4 +288,16 @@ a {
 
 .align-end {
     align-items: flex-end;
+}
+
+.text-align-start {
+    text-align: start;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-end {
+    text-align: end;
 }
